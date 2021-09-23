@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<style>
+body{
+	background-color: #a9a9a9;
+}
+#main-doc{
+	margin-left: 32%;
+}
+	.main-section{
+		font-size: 20px;
+
+	}
+	.nav-link{
+		float: left;
+		display: block;
+
+	}
+	#navbar{
+		float: left;
+		height: 100%;
+		position: fixed;
+		background-color: grey;
+		padding-right: 51px;
+		border-radius: 5px;
+		height: 100%;
+		font-family: "Gill Sans", sans-serif;
+
+	}
+	#kull{
+		list-style-type: none;
+		font-size: 30px;
+	}
+	a{
+		color: silver;
+		text-decoration: none;
+		font-family: "Gill Sans", sans-serif;
+
+
+	}
+	 @media (hover: hover){
+		a:hover {
+			color: black;
+
+		}
+	}
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<nav id="navbar">
+		<ul>
+			<div id="kull">
+			<header style="font-size: 35px;">Python Documentation</header>
+			<li><h4><a href="#Python_Introduction" class="nav-link">Python Introduction</a></h4></li>
+			<li><h4><a href="#Python_Syntax" class="nav-link" style="padding-top: 50px;">Python Syntax</a></h4></li>
+			<li><h4><a href="#Python_if_else" class="nav-link" style="padding-top: 50px;">Python if else</a></h4></li>
+			<li><h4><a href="#Python_For_Loops" class="nav-link" style="padding-top: 50px;">Python For Loops</a></h4></li>
+			<li><h4><a href="#Python_Modules" class="nav-link" style="padding-top: 50px;">Python Modules</a></h4></li>
+		</div>
+		</ul>
+	</nav>
+<body>
+	
+
+	<main id="main-doc">
+		<section class="main-section" id="Python_Introduction">
+			<header><h1>Python Introduction</h1></header>
+			<body>
+				<h3>WHAT IS PYTHON?</h3>
+			<p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.<br>It is used for:
+				<ul>
+					<li>Software Developement</li>
+					<li>Web Developement</li>
+					<li>System scripting</li>
+					<li>mathematics</li>
+				</ul>
+			</p>
+			<p>
+    Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+    Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+    Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.<br>
+    <code>print("Hello World")</code>
+</p>
+		</body>
+		</section>
+		<section class="main-section" id="Python_Syntax">
+			<header><h1>Python Syntax</h1></header>
+			<body>
+				<h3>Python Indentation</h3>
+			<p>Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.<br>
+Example:<br>
+<code>if 5 > 2:<br>
+  print("Five is greater than two!")</code>
+</p>
+			<p>
+				<h3>Comments</h3>
+				Python has commenting capability for the purpose of in-code documentation.<br>
+
+				Comments start with a #, and Python will render the rest of the line as a comment: <br>
+				<code>
+				#This is a comment.<br>
+				print("Hello, World!")
+				</code>
+			</p>
+		</body>
+		</section>
+		<section class="main-section" id="Python_if_else">
+			<body>
+			<header><h1>Python if else</h1></header>
+			<p>
+				<h3>Python Conditions and If statements</h3>
+				Python supports the usual logical conditions from mathematics:<br>
+				<ul>
+					<li>Equals: a == b</li>
+					<li>Not Equals: a != b</li>
+					<li>Less than: a < b</li>
+					<li>Less than or equal to: a <= b</li>
+					<li>Greater than: a > b</li>
+				</ul>
+			</p>
+			<p>Example:<br>
+					<code>a = 33<br>
+					b = 200<br>
+					if b > a:<br>
+  					print("b is greater than a")</code>
+			</p>
+		</body>
+		</section>
+		<section class="main-section" id="Python_For_Loops">
+			<body>
+				<header><h1>Python For Loops</h1></header>
+			<p>
+				<h3>Python For Loops</h3>
+				A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br>
+
+				This is less like the for keyword in other programming languages, and works more like an iterator method as found in other<br> object-orientated programming languages.<br>
+
+				With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.<br>
+				Example:<br>
+					<code>
+						fruits = ["apple", "banana", "cherry"]<br>
+						for x in fruits:<br>
+  						print(x)	
+					</code>
+			</p>
+			<p>
+				<h3>Looping Through a String</h3>
+				Even strings are iterable objects, they contain a sequence of characters:<br>
+				Example:<br>
+				<code>
+					for x in "banana":<br>
+  					print(x)
+				</code>
+			</p>
+		</body>
+		</section>
+		<section class="main-section" id="Python_Modules">
+			<body>
+				<header><h1>Python Modules</h1></header>
+			<p>
+				<h3>What is a Module?</h3>
+				Consider a module to be the same as a code library.<br>
+
+				A file containing a set of functions you want to include in your application.<br>
+				<h3>Create a Module</h3>
+				To create a module just save the code you want in a file with the file extension .py:<br>
+				<code>
+					def greeting(name):<br>
+  					print("Hello, " + name) 
+				</code>
+			</p>
+			<p>
+				<h3>Using the dir() Function</h3>
+				There is a built-in function to list all the function names (or variable names) in a module. The dir() function:<br>
+				Example:<br>
+				<code>
+					import platform<br><br>
+
+					x = dir(platform)<br>
+					print(x) 
+				</code>
+			</p>
+		</body>
+		</section>
+	</main>
+		
+</body>
+</html>
